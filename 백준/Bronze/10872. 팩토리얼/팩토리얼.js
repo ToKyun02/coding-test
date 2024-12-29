@@ -1,7 +1,7 @@
 const input = Number(
   require('fs').readFileSync('/dev/stdin').toString().trim()
 );
-// 메모이제이션 활용 시 n! 에서 n으로 시간 복잡도 낮아짐
+
 const memo = Array.from({ length: input + 1 }, () => 0);
 memo[0] = 1;
 memo[1] = 1;

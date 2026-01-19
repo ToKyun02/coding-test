@@ -26,6 +26,8 @@ def convert_to_dict(string):
 def solve():
     string = input()
     length = len(string)
+    if length > 10 :
+        exit(-1)
     string_dict = convert_to_dict(string)
     answer = find_lucky_string(string_dict,string, length, '', 0)
 
